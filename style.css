@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --Bege-claro:#E4C896;
+    --Bege-medio:#D6B47A;
+    --Marrom-escuro:#5C3A1A;
+    --Marrom-bescuro:#3C2413;
+}
+
+body {
+    background-color: var(--Bege-claro);
+    font-family: "Press Start 2P", system-ui;
+}
+
+.Campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Placar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Bege-medio);
+    color: var(--Marrom-escuro);
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 1rem 1rem 0 0;
+    min-width: 520px;
+    border-right: var(--Marrom-escuro) 2px solid;
+    border-top: var(--Marrom-escuro) 2px solid;
+    border-left: var(--Marrom-escuro) 2px solid;
+}
+
+
+.Zona_Monstro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    min-width: 520px;
+    background-color: var(--Bege-medio);
+    border-left: var(--Marrom-escuro) 2px solid;
+    border-right: var(--Marrom-escuro) 2px solid;
+}
+
+.Versus {
+    color: var(--Marrom-escuro);
+}
+
+.Maquina_Carta img{
+    height: 200px;
+    width: 150px;
+    display: flex;
+    align-items: wrap;
+    flex-direction: column;
+
+
+}
+
+
+
+.Ataque, .Defesa {
+    display: flex;
+    align-items: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: var(--Marrom-escuro);
+    margin: 1rem 0 0 4px;
+    padding: 0.4rem;
+    background-color: var(--Bege-claro);
+    border-radius: 1rem;
+    border: var(--Marrom-escuro) 2px solid;
+}
+
+.Minha_Carta img {
+    height: 200px;
+    width: 150px;
+    
+}
+
+h3  {
+    padding-bottom: 1rem;
+    color: var(--Marrom-escuro);
+}
+
+.Minhas_Cartas {
+    background-color: var(--Bege-medio);
+    min-width: 520px;
+    text-align: center;
+    border-left: var(--Marrom-escuro) 2px solid;
+    border-right: var(--Marrom-escuro) 2px solid;
+}
+.Zona_Minhas_Cartas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Carta {
+    height: 175px;
+    width: 115px;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease;
+    transform: rotateY(0deg) translateY(0);
+}
+
+.Carta:hover {
+    transform: scale(1.1);
+}
+
+.Resultado {
+    background-color: var(--Bege-medio);
+    color: var(--Marrom-escuro);
+    text-align: center;
+    max-width: 520px;
+    border-left: var(--Marrom-escuro) 2px solid;
+    border-right: var(--Marrom-escuro) 2px solid;
+}
+
+.Resultado_Duelo {
+    min-width: 520px;
+    font-size: 1rem;
+    padding: 1rem 0;
+
+}
+
+.Botoes_Acao {
+    background-color: var(--Bege-medio);
+    padding: 1rem 0;
+    min-width: 520px;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    border-left: var(--Marrom-escuro) 2px solid;
+    border-right: var(--Marrom-escuro) 2px solid;
+    border-bottom: var(--Marrom-escuro) 2px solid;
+}
+
+.Jogar_Carta {
+    padding: 0.5rem 5rem;
+    font-size: 1rem;
+    background-color: var(--Marrom-escuro);
+    color: var(--Bege-medio);
+    border: none;
+    border-radius: 1rem;
+}
+
+.Jogar_Carta:hover {
+    cursor: pointer;
+    background-color: var(--Marrom-bescuro);
+    color: var(--Bege-claro);
+}
+
+.trocando {
+  transform: rotateY(180deg);
+}
+
+
+@media screen and (max-width: 768px) {
+    .Campo {
+        min-width: 450px;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    .Placar, .Zona_Monstro, .Minhas_Cartas, .Resultado, .Botoes_Acao {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

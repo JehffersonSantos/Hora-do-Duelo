@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Duelo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="Campo">
+        <section class="Placar">
+            <div class="Pontos">
+                <dt class="Meus_Pontos">Meus Pontos: 01</dt>
+                <dt class="Maquina_Pontos">Pontos da Maquina: 01</dt>
+            </div>
+            <div class="Rodada">
+                <dt class="Pontos_Rodada">Rodada: 1/3</dt>
+                <dt class="Total_Player">Total Player: 0</dt>
+                <dt class="Total_Maquina">Total Maquina: 0</dt>
+            </div>
+        </section>
+        <section class="Zona_Monstro">
+            <div class="Minha_Carta">
+                <img class="Carta" id="Minha_Carta_Imagem" src="images/image_1.jpg" alt="Carta escolhida por min">
+                <span class="Ataque" id="Minha_Carta_Ataque">Ataque:2500 </span>
+                <span class="Defesa" id="Minha_Carta_Defesa">Defesa:1500</span>
+            </div>
+            <span class="Versus">
+                VS
+            </span>
+            <div class="Maquina_Carta">
+                <img class="Carta" id="Maquina_Carta_Imagem" src="images/image_2.jpg" alt="Carta escolhida pelo oponente">
+                <span class="Ataque" id="Maquina_Carta_Ataque">Ataque:3000</span>
+                <span class="Defesa" id="Maquina_Carta_Defesa">Defesa:2500</span>
+            </div>
+        </section>
+        <section class="Minhas_Cartas">
+            <h3>Minha Mão</h3>
+            <div class="Zona_Minhas_Cartas">
+                <div class="Carta_Mao">
+                    <img class="Carta" id="Minha_Carta_1" src="images/image_4.jpg" alt="Carta 1">
+                    <span class="Ataque">Ataque:2400</span>
+                    <span class="Defesa">Defesa:2000</span>
+                </div>
+                <div class="Carta_Mao">
+                    <img class="Carta" id="Minha_Carta_2" src="images/image_3.jpg" alt="Carta 2">
+                    <span class="Ataque">Ataque:2500</span>
+                    <span class="Defesa">Defesa:2100</span>
+                </div>
+                <div class="Carta_Mao">
+                    <img class="Carta" id="Minha_Carta_3" src="images/image_5.jpg" alt="Carta 3">
+                    <span class="Ataque">Ataque:3500</span>
+                    <span class="Defesa">Defesa:3000</span>
+                </div>
+            </div>
+        </section>
+        <div class="Resultado">
+            <h2 class="Resultado_Duelo">
+                Resultado do Duelo:Vitória
+            </h2>
+        </div>
+        <section class="Botoes_Acao">
+            <button class="Jogar_Carta">Jogar Carta</button>
+        </section>
+    </main>
+</body>
+</html>
