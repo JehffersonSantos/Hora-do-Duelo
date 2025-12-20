@@ -121,6 +121,11 @@ h3  {
     transform: scale(1.1);
 }
 
+.Carta_Mao.selecionada .Carta {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 4px var(--Marrom-escuro);
+}
+
 .Resultado {
     background-color: var(--Bege-medio);
     color: var(--Marrom-escuro);
