@@ -121,6 +121,12 @@ h3  {
     transform: scale(1.1);
 }
 
+.Carta_Mao.vazia .Carta,
+.Carta_Mao.vazia .Ataque,
+.Carta_Mao.vazia .Defesa {
+    visibility: hidden;
+}
+
 .Carta_Mao.selecionada .Carta {
     transform: scale(1.1);
     box-shadow: 0 0 0 4px var(--Marrom-escuro);
