@@ -60,7 +60,6 @@ body {
     height: 200px;
     width: 150px;
     display: flex;
-    align-items: wrap;
     flex-direction: column;
 
 
@@ -70,7 +69,6 @@ body {
 
 .Ataque, .Defesa {
     display: flex;
-    align-items: wrap;
     flex-direction: column;
     justify-content: center;
     font-size: 0.8rem;
@@ -115,25 +113,35 @@ h3  {
     transform-style: preserve-3d;
     transition: transform 0.4s ease;
     transform: rotateY(0deg) translateY(0);
+    
 }
 
 .Carta:hover {
     transform: scale(1.1);
+
 }
 
 .Resultado {
     background-color: var(--Bege-medio);
     color: var(--Marrom-escuro);
     text-align: center;
-    max-width: 520px;
+    min-width: 520px;
     border-left: var(--Marrom-escuro) 2px solid;
     border-right: var(--Marrom-escuro) 2px solid;
+
+
+}
+
+.Selecionada {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 4px var(--Marrom-escuro);
 }
 
 .Resultado_Duelo {
-    min-width: 520px;
+    min-width: 516px;
     font-size: 1rem;
     padding: 1rem 0;
+
 
 }
 
@@ -155,31 +163,51 @@ h3  {
     color: var(--Bege-medio);
     border: none;
     border-radius: 1rem;
+
 }
 
-.Jogar_Carta:hover {
+.Jogar_Carta:hover{
     cursor: pointer;
     background-color: var(--Marrom-bescuro);
     color: var(--Bege-claro);
+    
 }
 
 .trocando {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: center bottom;
+    transition: transform 0.4s ease;
+
 }
 
 
 @media screen and (max-width: 768px) {
-    .Campo {
+    /* .Campo {
         min-width: 450px;
         justify-content: center;
         height: auto;
 
-    }
+    }  */
 
-    .Placar, .Zona_Monstro, .Minhas_Cartas, .Resultado, .Botoes_Acao {
+     .Placar, .Zona_Monstro, .Minhas_Cartas, .Resultado, .Botoes_Acao, .Resultado_Duelo {
         min-width: auto;
         width: 100%;
+        height: auto;
     }
+
+    *{
+        font-size: 10px;
+    }
+
+    .Carta {
+        width: 100px;
+        height: 150px;
+        
+    }
+
+
 }
 
 
