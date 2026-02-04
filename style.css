@@ -136,6 +136,9 @@ h3  {
     transform: scale(1.1);
     box-shadow: 0 0 0 4px var(--Marrom-escuro);
 }
+.Desativada {
+    display: none;
+}
 
 .Resultado_Duelo {
     min-width: 516px;
